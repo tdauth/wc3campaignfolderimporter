@@ -5,6 +5,7 @@ project(wc3campaignfolderimporter LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include(ExternalProject)
 ExternalProject_Add(StormLib
     GIT_REPOSITORY "https://github.com/ladislav-zezula/StormLib"
 )
