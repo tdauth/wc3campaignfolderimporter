@@ -1,0 +1,21 @@
+language: cpp
+compiler:
+  - clang
+addons:
+  apt:
+    sources:
+      - boost-latest
+      - george-edison55-precise-backports
+    packages:
+      - cmake-data
+      - cmake
+      - valgrind
+      - libboost-all-dev
+      - libbz2-dev
+      - gettext
+
+script:
+     - mkdir -p build
+     - cd build
+     - cmake ../
+     - make
